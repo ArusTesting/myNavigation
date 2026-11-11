@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_utama">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_utama"
+    android:label="HOME"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ariel.paba.mynavigation.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/detailProfileFragment"
+        android:name="ariel.paba.mynavigation.DetailProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_detail_profile" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ariel.paba.mynavigation.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="ariel.paba.mynavigation.SettingFragment"
+        android:label="setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
